@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  cron:
+    image: tinslice/crontab
+    container_name: crontab
+    environment: 
+      CRON_SAMPLE: '* * * * * echo 1 minute cron'
+      CRON_ANOTHER_SAMPLE: '*/5 * * * * echo 5 minute cron'
+      CRON_ERROR_SAMPLE: '*/3 * * * * no-valid-command'
