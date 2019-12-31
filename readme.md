@@ -7,6 +7,8 @@
 
 Docker image for running cron jobs.
 
+Synchronize files example project <https://github.com/arcane-io/docker-cron> .
+
 ## Usage
 
 In order to create cron jobs add environment properties that start with 'CRON_' (the name must be unique) and have the value with the format `<cron-value> <command>`.
